@@ -1,0 +1,40 @@
+.form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    display: none;
+    z-index: 9999;
+    transition: opacity 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-family: 'Inter', sans-serif !important;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.form.show {
+    opacity: 1;
+}
+
+
+.formButton{
+    position: initial !important;
+    margin-top: 10px;
+}
+
+.inputs {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.labels{
+    display: block;
+    margin: 10px;
+}

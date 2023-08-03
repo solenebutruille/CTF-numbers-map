@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Million Numbers</title>
+        <link rel="icon" href="logo.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="forms.css">
+        <link rel="stylesheet" type="text/css" href="purchase-history.css">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet" />
+        <script  type="module" src="buy-number-form.js"></script>
+        <script  type="module" src="map.js"></script>
+        <script  type="module" src="login.js"></script>
+        <script  type="module" src="purchase-history.js"></script>
+    </head>
+    <body>
+        <div id="map"></div>
+        <div id="buttons">
+            <button class="btn" id="login-button">Login</button>
+            <button class="btn" id="history-button" style="display:none;">Purchase history</button>
+            <button class="btn" id="logout-button" style="display:none;">Logout</button>
+            <button class="btn" id="buy-number" style="display:none;">Buy number</button>
+        </div>
+        <div id="purchase-history"></div>
+        <div id="login-form-container"></div>
+        <div id="buy-number-form-container"></div>
+    </body>
+</html>

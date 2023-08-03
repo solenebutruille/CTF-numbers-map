@@ -1,0 +1,13 @@
+packageName: "srpt_demo_package_testing"
+packageType: dir
+manifestVersion: 1.0
+
+# The files that go into the package. Remove anything extra, like SNAPSHOTs, original-{artifact-name}.jar etc. ex. equity-trading-ui-x.x.x-test.x.x.x
+# Synced from __u1_build/equity-trading/bundle
+files:
+  - src: "./dist"
+    dest: "/srpt_demo_package_testing"
+# The mapping of application name and the location in the package to run the application from.
+applications:
+  - name: "test"
+    location: "/srpt_demo_package_testing"

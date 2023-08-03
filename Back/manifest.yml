@@ -1,0 +1,9 @@
+manifestVersion: 1.0
+
+files:
+  - src: "target/demo-security-project-java.jar"
+
+applications:
+  - name: "test"
+
+packageName: "srpt_demo_package_testing"

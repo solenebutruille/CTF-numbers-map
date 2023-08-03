@@ -1,0 +1,12 @@
+#purchase-history-popup {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#purchase-history-popup.show {
+    opacity: 1;
+}
+  
+#purchase-history-list {
+    max-height: 200px; /*change this value to the height you want*/
+    overflow-y: auto;
+}

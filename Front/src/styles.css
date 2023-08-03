@@ -1,0 +1,129 @@
+/* Set the map to take up the full screen */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('font/Inter-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }  
+
+#map {
+    height: 100%;
+}
+
+.mapboxgl-map{
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Style the buttons */
+.btn {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif !important;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+#buy-number {
+    left: 50%;
+}
+
+/* Hide the buttons initially */
+#buttons {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+#buttons.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Customize the marker */
+.marker {
+    background-color: #222;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+}
+
+#history-button {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.mapboxgl-popup-content {
+    color: #FFFFFF;
+    background-color: #1E1E1E !important;
+    max-width: 250px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 15px !important;
+    padding: 5px 10px 5px !important;
+}
+
+.mapboxgl-popup-content.show {
+    opacity: 1;
+  }
+  
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+    border-top-color: black !important;
+    display: none;
+}
+
+.mapboxgl-popup-close-button{
+    display: none;
+}
+
+#login-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.mapboxgl-popup {
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
