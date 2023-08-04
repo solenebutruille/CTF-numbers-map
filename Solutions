@@ -15,7 +15,7 @@ The Flag is then displayed in the answer
 Put in the payload ' or true-- instead of username and in the response of the request there is the flag
 
 3. OS Commande injection
-In the purchase history, when inputting in the search the payload : 4 && cd .. && ls && cd flag && ls && cat flag.flg
+In the purchase history, when inputting in the search the payload : 4 && cd .. && ls && cd flag && ls && cat flag.flg && ls
 
 4. XSS
 Create a number with the payload 
