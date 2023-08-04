@@ -1,0 +1,15 @@
+This is the front for the numbers-map CTF challenge.
+
+ENVIRONMENT VARIABLES
+PORT #PORT if you want to change it, default is 80
+BACKEND_URL #BACKEND_URL for calls to backend. For example http://bqckend-test-ctf.h7fybef5f6cyc2hb.eastus.azurecontainer.io
+
+LOCAL RUN
+In order to run the project locally, run npm install and then npm start.
+
+DOCKER IMAGE CREATION
+In order to create a new docker image and push it, run : docker buildx build --platform linux/amd64,linux/arm64 -t sbutruil/ctf-numberschallenge-frontend:0.0.3  --push  .
+
+CURRENT DOCKER IMAGES
+You can find the image to this challenge on docker : https://hub.docker.com/r/sbutruil/ctf-numberschallenge-frontend
+The latest image is : docker pull sbutruil/ctf-numberschallenge-frontend:0.0.4
