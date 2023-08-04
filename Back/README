@@ -1,0 +1,22 @@
+This is the backend for the numbers-map CTF challenge.
+
+ENVIRONMENT VARIABLES
+IOR_FLAG #Indirect object reference flag
+LOGIN_FLAG #Login flag
+OSCI_FLAG #OS command injection flag
+XXE_FLAG #XXE flag
+PORT #PORT if you want to change it, default is 8080
+RESET_PASSWORD #Password in order to reset database : if you POST on URL /resetDatabase/{password} it will reset the database from origin settings
+
+LOCAL RUN
+In order to run the project locally, you can find the entrypoint in Application.java.
+In order to install all depencies, run npm install in the folder containing pom.xml.
+
+DOCKER IMAGE CREATION
+In order to create a new docker image and push it, run : docker buildx build --platform linux/amd64,linux/arm64 -t sbutruil/ctf-numberschallenge-backend:0.0.6  --push  .
+ATTENTION: the docker file doesn't create the executable. It needs to be created before hand using npm package.
+
+CURRENT DOCKER IMAGES
+You can find the image to this challenge on docker : https://hub.docker.com/r/sbutruil/ctf-numberschallenge-backend
+The latest image is : docker pull sbutruil/ctf-numberschallenge-backend:0.0.6
+
