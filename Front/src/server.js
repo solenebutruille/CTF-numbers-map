@@ -6,8 +6,7 @@ const path = require('path');
 
 const app = express();
 var port = process.env.PORT;
-const backEndURL = "http://localhost:8082";
-//process.env.BACKEND_URL; 
+const backEndURL = process.env.BACKEND_URL;
 
 if (!port) {
   port = 80;
