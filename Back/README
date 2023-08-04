@@ -10,7 +10,7 @@ RESET_PASSWORD #Password in order to reset database : if you POST on URL /resetD
 
 LOCAL RUN
 In order to run the project locally, you can find the entrypoint in Application.java.
-In order to install all depencies, run npm install in the folder containing pom.xml.
+In order to install all dependencies, run mvn install in the folder containing pom.xml.
 
 DOCKER IMAGE CREATION
 In order to create a new docker image and push it, run : docker buildx build --platform linux/amd64,linux/arm64 -t sbutruil/ctf-numberschallenge-backend:0.0.6  --push  .
